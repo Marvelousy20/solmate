@@ -2,13 +2,13 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className=" px-20 relative py-16 mt-20">
-      <div className="flex justify-between">
+    <footer className="px-4 lg:px-20 relative py-16 mt-20">
+      <div className="flex flex-col md:flex-row justify-between">
         <div className="">
           <div className="mb-8">
             <Image src="/avatar.svg" alt="avatar" width={32} height={40} />
           </div>
-          <ul className="flex space-x-8 text-[#667085]">
+          <ul className="md:flex md:space-x-4 lg:space-x-8 text-[#667085] space-y-4">
             <li>Overview</li>
             <li>Roadmap</li>
             <li>Tokenomics</li>
@@ -19,7 +19,9 @@ export default function Footer() {
         </div>
 
         <div>
-          <h3 className="font-medium text-sm mb-2">Stay up to date</h3>
+          <h3 className="font-medium text-sm mb-2 mt-10 md:mt-0">
+            Stay up to date
+          </h3>
 
           <div className="space-x-2 mt-2">
             <input

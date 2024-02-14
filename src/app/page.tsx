@@ -5,8 +5,8 @@ export default function Home() {
   return (
     <main className="justify-between">
       {/*Hero */}
-      <div className="text-center max-w-4xl mx-auto pt-40">
-        <div className="z-0">
+      <div className="text-center max-w-4xl mx-auto pt-16 lg:pt-40">
+        <div className="z-0 hidden lg:block">
           <Image
             src="/gradient.svg"
             alt="gradient"
@@ -14,20 +14,21 @@ export default function Home() {
             className="z-0"
           />
         </div>
-        <div className=" relative !z-20">
-          <p className="font-semibold ">Love. Token. Simple.</p>
-          <h3 className="text-7xl font-semibold mt-3">
+        <div className="relative !z-20">
+          <p className="font-semibold">Love. Token. Simple.</p>
+          <h3 className="text-[2.25rem] md:text-5xl lg:text-7xl font-semibold mt-3 leading-[46px]">
             Discover Your Soulmate on SOLMATE
           </h3>
-          <p className="mt-6">
+          <p className="mt-3 md:mt-6 px-4 md:px-0">
             Gift your soulmate while getting paid to socialize.
           </p>
 
-          <div className="font-medium space-x-3 mt-12">
-            <button className="bg-white rounded-lg py-2.5 px-4 text-black">
+          <div className="font-medium md:space-x-3 space-y-2 mt-12">
+            <button className="bg-white rounded-lg py-2.5 px-4 text-black w-[13rem] md:w-aut">
               Join Telegram Channel
             </button>
-            <button className="bg-[#7F56D9] rounded-lg py-2.5 px-4">
+            <br className="md:hidden" />
+            <button className="bg-[#7F56D9] rounded-lg py-2.5 px-4 w-[13rem] md:w-auto">
               Buy $SOLM
             </button>
           </div>
@@ -35,15 +36,17 @@ export default function Home() {
       </div>
 
       {/*  */}
-      <div className="flex justify-center mt-20">
+      <div className="md:flex justify-center mt-20 hidden">
         <Image src="/notifyyy/main.svg" alt="main" width={887} height={537} />
       </div>
 
       {/* Solmate */}
-      <div className="mt-32 lg:px-24">
-        <div className="flex justify-between items-center">
-          <div>
-            <h1 className="text-[3rem]">SOLMATE</h1>
+      <div className="mt-20 lg:mt-32 px-4 lg:px-24 py-12">
+        <div className="flex flex-col lg:flex-row justify-between items-center">
+          <div className="order-2 mt-10 md:mt-0">
+            <h1 className="text-[2.35rem] md:text-[3rem] font-semibold text-center md:text-start">
+              SOLMATE
+            </h1>
             <div>
               The Solana Meme for all memes. <br /> <br /> Solmate brings love
               and riches to the Solana community. With a billion <br /> dollar
@@ -59,26 +62,47 @@ export default function Home() {
               </ul>
             </div>
           </div>
-          <div>
-            <Image src="/solmate.svg" alt="solmate" width={500} height={510} />
+          <div className="order-1 md:order-2">
+            <Image
+              src="/solmate.svg"
+              alt="solmate"
+              width={500}
+              height={510}
+              className="hidden lg:block"
+            />
+            <Image
+              src="/solmate.svg"
+              alt="solmate"
+              width={294}
+              height={304}
+              className="block lg:hidden"
+            />
           </div>
         </div>
       </div>
 
       {/* Partners */}
       <div className="bg-white py-12">
-        <div className="flex justify-around items-center">
+        <div className="lg:flex justify-around items-center hidden">
           <Image src="/tiktok.svg" alt="tiktok" width={213} height={62} />
           <Image src="/onlyfans.svg" alt="onlyfans" width={213} height={62} />
           <Image src="/tinder.svg" alt="tinder" width={213} height={62} />
-          <p className="text-black">=</p>
+          <p className="text-black text-5xl">=</p>
           <Image src="/solmateimg.svg" alt="solmate" width={213} height={62} />
+        </div>
+
+        <div className="flex justify-around flex-col items-center lg:hidden space-y-10">
+          <Image src="/tiktok.svg" alt="tiktok" width={150} height={62} />
+          <Image src="/onlyfans.svg" alt="onlyfans" width={150} height={62} />
+          <Image src="/tinder.svg" alt="tinder" width={150} height={62} />
+          <p className="text-black text-5xl">=</p>
+          <Image src="/solmateimg.svg" alt="solmate" width={150} height={62} />
         </div>
       </div>
 
       {/* Download */}
 
-      <div className="py-36 relative">
+      <div className="py-20 lg:py-36 relative">
         <Image
           src="/cgradient.svg"
           alt="gradient"
@@ -86,7 +110,7 @@ export default function Home() {
           height={600}
           className="z-0 absolute -top-40 left-0"
         />
-        <div className="flex items-center relative !z-20 gap-2 lg:px-24">
+        <div className="flex flex-col lg:flex-row items-center relative !z-20 gap-2 lg:px-24">
           <Image
             src="/smart.svg"
             alt="community"
@@ -97,8 +121,8 @@ export default function Home() {
 
           <div>
             <p className="font-semibold text-xl text-center">Coming Soon</p>
-            <div className="flex gap-5 mt-4">
-              <div className="flex items-center border rounded-md p-2">
+            <div className="flex flex-col lg:flex-row gap-5 mt-4">
+              <div className="flex items-center border rounded-md p-2 gap-2">
                 <Image
                   src="/apple.svg"
                   alt="googleplay"
@@ -107,11 +131,11 @@ export default function Home() {
                 />
                 <span>
                   Download on the <br />
-                  <span className="text-2xl">App Store</span>
+                  <span className="text-xl md:text-2xl">App Store</span>
                 </span>
               </div>
 
-              <div className="flex items-center border rounded-md p-2">
+              <div className="flex items-center border rounded-md p-2 gap-2">
                 <Image
                   src="/googleplay.svg"
                   alt="apple"
@@ -119,7 +143,8 @@ export default function Home() {
                   height={45}
                 />
                 <span>
-                  GET IT ON <br /> <span className="text-2xl">Google Play</span>
+                  GET IT ON <br />{" "}
+                  <span className="text-xl md:text-2xl">Google Play</span>
                 </span>
               </div>
             </div>
@@ -129,17 +154,33 @@ export default function Home() {
 
       {/* People */}
       <div className="relative">
-        <div className="relative h-[590px]">
-          <Image src="/people.svg" alt="people" fill className="h-full" />
+        <div className="relative h-[590px] hidden md:block">
+          <Image
+            src="/people.svg"
+            alt="people"
+            fill
+            className="h-full w-full"
+          />
+        </div>
+
+        <div className="relative h-[300px] block md:hidden">
+          <Image
+            src="/peopleMobile.svg"
+            alt="people"
+            fill
+            className="h-full w-full"
+          />
         </div>
       </div>
 
       {/* Community */}
       <div className="text-center mt-28">
-        <h1 className="text-[4rem] font-semibold">Join Community</h1>
-        <p>Solmate is created with love for Solana</p>
+        <h1 className="text-3xl lg:text-[4rem] font-semibold">
+          Join Community
+        </h1>
+        <p className="mt-2 md:mt-6">Solmate is created with love for Solana</p>
 
-        <div className="flex justify-center gap-4 mt-10">
+        <div className="flex justify-center gap-4 mt-6 md:mt-10">
           <Image src="/X.svg" alt="x" width={42} height={42} />
           <Image src="/Telegram.svg" alt="x" width={42} height={42} />
         </div>

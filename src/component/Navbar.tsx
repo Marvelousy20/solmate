@@ -2,12 +2,12 @@ import Image from "next/image";
 
 export default function Navbar() {
   return (
-    <div className="flex justify-between items-center lg:px-20 pt-4 z-20 relative">
+    <div className="flex justify-between items-center px-4 lg:px-20 pt-4 z-20 relative">
       <div className="flex items-center gap-4">
         <div>
           <Image src="/avatar.svg" alt="avatar" width={32} height={40} />
         </div>
-        <ul className="flex gap-8">
+        <ul className="lg:flex gap-8 hidden">
           <li>Home</li>
           <li>Roadmap</li>
           <li>Tokenomics</li>
