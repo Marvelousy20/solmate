@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main className="justify-between">
       {/*Hero */}
-      <div className="text-center max-w-4xl mx-auto">
+      <div className="text-center max-w-4xl mx-auto pt-40">
         <div className="z-0">
           <Image
             src="/gradient.svg"
@@ -33,6 +33,12 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      {/*  */}
+      <div className="flex justify-center mt-20">
+        <Image src="/notifyyy/main.svg" alt="main" width={887} height={537} />
+      </div>
+
       {/* Solmate */}
       <div className="mt-32 lg:px-24">
         <div className="flex justify-between items-center">
