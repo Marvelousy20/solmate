@@ -69,6 +69,7 @@ export default function Home() {
               width={500}
               height={510}
               className="hidden lg:block"
+              priority
             />
             <Image
               src="/solmate.svg"
@@ -76,6 +77,7 @@ export default function Home() {
               width={294}
               height={304}
               className="block lg:hidden"
+              priority
             />
           </div>
         </div>
