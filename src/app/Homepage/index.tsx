@@ -197,9 +197,13 @@ export const Main = () => {
           <Image src="/solmateimg.svg" alt="solmate" width={213} height={62} />
         </div>
 
-        <div className="flex justify-around flex-col items-center lg:hidden space-y-10">
+        <div className="flex justify-around flex-col items-center lg:hidden space-y-6">
           <Image src="/tiktok.svg" alt="tiktok" width={150} height={62} />
+          <p className="text-black text-5xl">+</p>
+
           <Image src="/onlyfans.svg" alt="onlyfans" width={150} height={62} />
+          <p className="text-black text-5xl">+</p>
+
           <Image src="/tinder.svg" alt="tinder" width={150} height={62} />
           <p className="text-black text-5xl">=</p>
           <Image src="/solmateimg.svg" alt="solmate" width={150} height={62} />
