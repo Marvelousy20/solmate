@@ -124,14 +124,14 @@ export const Main = () => {
 
       {/* Solmate */}
       <div className="mt-20 lg:mt-32 px-4 lg:px-24 py-12">
-        <div className="flex flex-col lg:flex-row justify-between items-center">
+        <div className="flex flex-col lg:flex-row justify-between items-center gap-10">
           <div className="order-2 mt-10 md:mt-0">
             <h1 className="text-[2.35rem] md:text-[3rem] font-semibold text-center md:text-start">
               SOLMATE
             </h1>
             <div>
               The Solana Meme for all memes. <br /> <br /> Solmate brings love
-              and riches to the Solana community. With a billion <br /> dollar
+              and riches to the Solana community. <br /> With a billion dollar
               market cap gem. <br /> <br /> Solmate is all you need on Solana{" "}
               <br /> <br />
               Become a Solmate whale now. <br /> <br />
@@ -144,7 +144,26 @@ export const Main = () => {
               </ul>
             </div>
           </div>
-          <div className="order-1 md:order-2">
+          <div className="order-2">
+            <Image
+              src="/sol.svg"
+              alt="sol"
+              width={400}
+              height={422}
+              priority
+              className="hidden lg:block"
+            />
+
+            <Image
+              src="/sol.svg"
+              alt="sol"
+              width={350}
+              height={302}
+              priority
+              className="block lg:hidden"
+            />
+          </div>
+          <div className="order-3 md:order-2">
             <Image
               src="/solmate.svg"
               alt="solmate"
@@ -169,7 +188,10 @@ export const Main = () => {
       <div className="bg-white py-12">
         <div className="lg:flex justify-around items-center hidden">
           <Image src="/tiktok.svg" alt="tiktok" width={213} height={62} />
+          <p className="text-black text-5xl">+</p>
+
           <Image src="/onlyfans.svg" alt="onlyfans" width={213} height={62} />
+          <p className="text-black text-5xl">+</p>
           <Image src="/tinder.svg" alt="tinder" width={213} height={62} />
           <p className="text-black text-5xl">=</p>
           <Image src="/solmateimg.svg" alt="solmate" width={213} height={62} />
