@@ -8,7 +8,7 @@ export default function Footer() {
           <div className="mb-8">
             <Image src="/avatar.svg" alt="avatar" width={32} height={40} />
           </div>
-          <ul className="md:flex md:space-x-4 lg:space-x-8 text-[#667085] space-y-4">
+          <ul className="md:flex md:space-x-4 lg:space-x-8 text-[#667085] space-y-4 md:space-y-0">
             <li>Overview</li>
             <li>Roadmap</li>
             <li>Tokenomics</li>
