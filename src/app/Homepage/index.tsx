@@ -8,7 +8,7 @@ export const Main = () => {
     <main className="justify-between">
       {/*Hero */}
       <div className="text-center max-w-4xl mx-auto pt-16 lg:pt-40">
-        <div className="z-0 hidden lg:block">
+        <div className="z-0 block lg:block">
           <Image
             src="/gradient.svg"
             alt="gradient"
@@ -39,7 +39,7 @@ export const Main = () => {
 
       {/*  */}
 
-      <section className="md:flex items-center justify-center relative hidden">
+      <section className="md:flex items-center justify-center relative hidden mt-20">
         <div className="flex w-[800px] h-[500px] z-[9999] justify-center mt-20 relative bg-[url(/notifyyy/main.svg)] bg-no-repeat bg-cover"></div>
         <motion.figure
           animate={{
@@ -50,7 +50,7 @@ export const Main = () => {
             repeat: Infinity, // Repeat infinitely
             ease: "easeInOut", // Easing function
           }}
-          className="h-[300px] w-[300px] absolute bottom-0 left-[200px] -mb-36 -ml-8"
+          className="h-[300px] w-[300px] absolute bottom-0 left-[16%] -mb-36 -ml-8"
         >
           <Image
             src="/notifyyy/livestream.svg"
@@ -70,7 +70,7 @@ export const Main = () => {
             repeat: Infinity,
             ease: "easeInOut",
           }}
-          className="h-[300px] w-[300px] absolute z-[9999] top-0 -mt-20 left-[100px]"
+          className="h-[300px] w-[300px] absolute z-[9999] top-0 -mt-20 left-[10%]"
         >
           <Image
             src="/notifyyy/addfriend.svg"
@@ -90,7 +90,7 @@ export const Main = () => {
             repeat: Infinity,
             ease: "easeInOut",
           }}
-          className="h-[300px] w-[300px] absolute top-0 right-[200px] -mt-10 -mr-20"
+          className="h-[300px] w-[300px] absolute top-0 right-[14%] -mt-10 -mr-20"
         >
           <Image
             src="/notifyyy/subscribe.svg"
@@ -110,7 +110,7 @@ export const Main = () => {
             repeat: Infinity,
             ease: "easeInOut",
           }}
-          className="h-[300px] w-[300px] absolute bottom-0 right-[200px] -mb-32 -mr-20 z-[9999]"
+          className="h-[300px] w-[300px] absolute bottom-0 right-[14%] -mb-32 -mr-20 z-[9999]"
         >
           <Image
             src="/notifyyy/newfriend.svg"
